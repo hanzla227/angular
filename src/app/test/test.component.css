@@ -1,0 +1,15 @@
+h2{
+    background-color: antiquewhite;
+    color: red;
+    /* text-align: center; */
+    position: relative;
+}
+.bg-success{
+    color: green;
+}
+.bg-danger{
+    color: red;
+}
+.bg-isSpecial{
+    font-style: italic;
+}

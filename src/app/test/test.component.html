@@ -1,0 +1,33 @@
+<h2>
+    Welcome {{name}}
+</h2>
+<!-- <p> 
+    test still working!
+</p>
+<h2>
+    this test working too!
+</h2>
+<h3>{{3+3}}</h3>
+<h3>{{name.length}}</h3>
+<h2>{{url}}</h2>
+<h2 [class.bg-danger]="error">codemy</h2> 
+<h2 [class]="multiError">codemy</h2>
+<h2 [style.color]="'blue'">codemy</h2>
+<h2 [style.color]="error ? 'red' :'blue'">codemy</h2>
+<h2 [ngStyle]="multiStyle">Codemy</h2>
+<input style="margin-bottom:30px;" type="submit" (click)="onClick()" value="check"><br>
+<button (click)="onClick($event)">check</button>
+<br>
+{{greetings}} -->
+<input #myinput type="text ">
+<button (click)="logMessage(myinput.value)">check</button>
+<h3 style="color: blue;background-color: white;">{{message}}</h3> 
+<input  [(ngModel)]="fname"type="text">
+{{fname}}
+<h2 *ngIf="Dnone">Codemy</h2>
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">You have choosed red color</div>
+    <div *ngSwitchCase="'blue'">You have choosed blue color</div>
+    <div *ngSwitchCase="'yellow'">You have choosed yellow color</div>
+    <div *ngSwitchDefault>Pick again    </div>
+</div>
