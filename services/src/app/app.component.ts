@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public d= new Date;
-  title = 'component-interaction';
+  title = 'services';
+  public employees = []
 }
