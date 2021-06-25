@@ -1,0 +1,10 @@
+.headStyle{
+    text-align: center;
+    color: crimson;
+}
+h2 a:hover{
+    color: blue;
+}
+ol{
+    list-style-type: circle;
+}

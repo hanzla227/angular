@@ -1,0 +1,42 @@
+<div >
+<h1 class="headStyle"> welcome {{title}}</h1>
+<h2 class="headStyle" style="text-decoration: underline;">This is a ng-directive</h2>
+ <!-- ngSwitch using directives -->
+ <div [ngSwitch]="color">
+   <div *ngSwitchCase="'red'">You have choosed red color</div>
+   <div *ngSwitchCase="'blue'">You have choosed blue color</div>
+   <div *ngSwitchCase="'green'">You have choosed green color</div>
+   <div *ngSwitchDefault>Invalid input</div>
+ </div> 
+ <div *ngFor="let color of colors">
+   <p>{{colors}}</p>
+ </div>
+ <div *ngFor="let color of colors;index as t">{{t}} {{color}}</div>
+ <h2 class="headStyle" style="text-decoration: underline;">{{name | titlecase}}</h2>
+ <h2 class="headStyle" style="text-decoration: underline;">{{name | slice:0:15}}</h2>
+ <h2 class="headStyle">  <a href="https://www.google.com" style="color: red;">{{color | uppercase}}</a> </h2>
+ <h1> {{person | json}} </h1>
+ <p> {{value | number:'2.2-5' }} </p>
+ <p> {{.323232 | number:'3.2-3' }} </p>
+ <p>  {{.341 | percent}}</p>
+ <p>  {{.341 | currency }}</p>
+ <p>{{d | date:'shortTime'}}</p>
+</div>
+<div>
+  Employees Evolution
+  <ol>
+    <li>Jhon</li>
+    <li>Doe</li>
+    <li>Andrew</li>
+    <li>Mathew</li>
+  </ol>
+</div>
+<h1>Employees Evolution</h1>
+<ul *ngFor="let employee of employees">
+  <li>{{ employee.name }}{{employee.id}}</li>
+</ul>
+<!-- <ul *ngFor="let employee of employees">
+  <li>{{employee.id}}</li>
+
+</ul> -->
+<!-- <app-test [parentData]="fristName"></app-test> -->
