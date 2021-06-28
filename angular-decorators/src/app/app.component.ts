@@ -11,4 +11,5 @@ export class AppComponent {
   workHard(){
     console.log("this function got executed "+this.i++ +"times")
   }
+  public name="";
 }
